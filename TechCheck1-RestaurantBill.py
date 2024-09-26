@@ -10,11 +10,13 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
+    billAmt = float(input("Enter your bill amount: ")) #takes in bill amount
 
+    billTax = billAmt * 0.15                  #calculation for tax
+    billTip = billAmt * 0.20                    #calculation for tip
+    billTotal = billAmt + billTax + billTip     #calculation for total
 
-
-
-
+    print("The original bill amount is: {0:.2f}\nYour tax is:  {1:.2f}\nYour tip is: {2:.2f}\nYour total is: {3:.2f}".format(billAmt, billTax, billTip, billTotal))
 
 
 
